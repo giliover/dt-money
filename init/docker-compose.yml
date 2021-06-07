@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  client.dt-money:
+    image: dt-money/react
+    stdin_open: true
+    container_name: client.dt-money
+    volumes:
+      - ../client:/client.dt-money/
+      - /client.dt-money/node_modules/
+    ports:
+      - 3000:3000
+    build:
+      context: ../client/
+      dockerfile: config/docker/Dockerfile
+    environment:
+      - NODE_ENV=development
+    restart: always
