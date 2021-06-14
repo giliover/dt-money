@@ -1,12 +1,13 @@
 import React from "react";
+import { useSelector, shallowEqual } from "react-redux";
+import { formatValue } from "utils/formatValue";
+
 import { Container } from "styles/transactionsTable";
-import { api } from "services/api";
 
 function TransactionsTable() {
-	api.get("transactions").then((response) => {
-		console.log(response.data);
-	});
-
+	const transactions = useSelector((state: StoreState) => {
+		return state.transactions;
+	}, shallowEqual);
 	return (
 		<Container>
 			<table>
@@ -19,18 +20,16 @@ function TransactionsTable() {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>WebSite</td>
-						<td className="deposit">R$: 5.000,00</td>
-						<td>work</td>
-						<td>03/06/2021</td>
-					</tr>
-					<tr>
-						<td>Sound Box</td>
-						<td className="withdraw">- R$: 300,00</td>
-						<td>leisure</td>
-						<td>04/06/2021</td>
-					</tr>
+					{transactions.map((transaction) => (
+						<tr key={transaction.id}>
+							<td>{transaction.title}</td>
+							<td className={transaction.type}>
+								{formatValue(transaction.value)}
+							</td>
+							<td>{transaction.category}</td>
+							<td>{transaction.createdAt}</td>
+						</tr>
+					))}
 				</tbody>
 			</table>
 		</Container>
