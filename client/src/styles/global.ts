@@ -70,6 +70,35 @@ button {
     cursor: not-allowed;
 }
 
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-content {
+    background: var(--background);
+    width: 100%;
+    max-width: var(--breakpoint-sm);
+    padding: 3rem;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+}
+
 `;
 
 export default GlobalStyle;
