@@ -3,7 +3,6 @@ import { uuid } from "uuidv4";
 import useModals from "hooks/useModals";
 import useTransactions from "hooks/useTransactions";
 import Modal from "react-modal";
-import { getValidationErrors } from "utils";
 
 import { Container } from "styles/newTransactionModal";
 
