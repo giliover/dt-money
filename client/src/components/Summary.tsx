@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, shallowEqual } from "react-redux";
 import { Container } from "styles/summary";
+import { formatValue } from "utils/formatValue";
+
 import incomeImg from "assets/income.svg";
 import outcomeImg from "assets/outcome.svg";
 import totalImg from "assets/total.svg";
@@ -35,21 +37,21 @@ function Summary() {
 					<p>Inputs</p>
 					<img src={incomeImg} alt="inputs" />
 				</header>
-				<strong>R$: {summary.deposits}</strong>
+				<strong>{formatValue(summary.deposits)}</strong>
 			</div>
 			<div>
 				<header>
 					<p>Outputs</p>
 					<img src={outcomeImg} alt="outputs" />
 				</header>
-				<strong>- R$: {summary.withdraws}</strong>
+				<strong>{formatValue(summary.withdraws)}</strong>
 			</div>
 			<div className="highlight-background">
 				<header>
 					<p>Total</p>
 					<img src={totalImg} alt="total" />
 				</header>
-				<strong>R$: {summary.total}</strong>
+				<strong>{formatValue(summary.total)}</strong>
 			</div>
 		</Container>
 	);
