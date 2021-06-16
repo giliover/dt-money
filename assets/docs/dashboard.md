@@ -1,16 +1,10 @@
 <label><strong>💻 Code: </strong></label>
 
 ```jsx
-function Dashboard() {
-	return (
-		<Container>
-			<Summary />
-		</Container>
-	);
-}
-
-export default Dashboard;
-
+	<Container>
+		<Summary />
+		<TransactionsTable />
+	</Container>
 ```
 
 ```jsx

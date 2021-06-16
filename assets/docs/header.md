@@ -1,24 +1,20 @@
 <label><strong>💻 Code: </strong></label>
 
 ```jsx
-function Header() {
-	return (
-		<Container>
-			<Content>
-				<img src={logo} alt="dt money" />
-				<button type="button">New transition</button>
-			</Content>
-		</Container>
-	);
-}
-
-export default Header;
-```
-
+	<Container>
+		<Content>
+			<img src={logo} alt="dt money" />
+			<button onClick={openModal} type="button">
+				New transition
+			</button>
+		</Content>
+	</Container>
 ```jsx
+
 export const Container = styled.header`
 	background: var(--blue);
 `;
+
 export const Content = styled.div`
 	display: flex;
 	align-items: center;
