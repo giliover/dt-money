@@ -87,34 +87,34 @@
                             <td>
                                 <ol>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="Docker" src="https://docs.docker.com/"></img>
+                                        <img alt="Docker" src="https://github.com/docker/docker.github.io"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="Docker Comopse" src="https://docs.docker.com/compose/"></img>
+                                        <img alt="Docker Comopse" src="https://github.com/docker/compose"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="React" src="https://pt-br.reactjs.org/"></img>
+                                        <img alt="React" src="https://github.com/facebook/react"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="Typescript" src="https://www.typescriptlang.org/"></img>
+                                        <img alt="Typescript" src="https://github.com/microsoft/TypeScript"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="Styled Compoents" src="https://styled-components.com/docs"></img>
+                                        <img alt="Styled Compoents" src="https://github.com/styled-components/styled-components"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="MirageJs" src="https://miragejs.com/docs/getting-started/introduction/"></img>
+                                        <img alt="MirageJs" src="https://github.com/miragejs/miragejs"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="React Modal" src="https://www.npmjs.com/package/react-modal"></img>
+                                        <img alt="React Modal" src="https://github.com/reactjs/react-modal"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="React Redux" src="https://react-redux.js.org/introduction/getting-started"></img>
+                                        <img alt="React Redux" src="https://github.com/reduxjs/react-redux"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
                                         <img alt="EnzymeJs" src="https://github.com/enzymejs/enzyme"></img>
                                     </li>
                                     <li style="font-size: 0.6rem">
-                                        <img alt="Axios" src="https://axios-http.com/docs/intro"></img>
+                                        <img alt="Axios" src="https://github.com/axios/axios"></img>
                                     </li>
                                 </ol>
                             </td>
